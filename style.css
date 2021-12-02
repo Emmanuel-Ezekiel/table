@@ -79,6 +79,7 @@ h4 {
 }
 h1 {
   font-size: 3rem;
+  text-align: center;
 }
 h2 {
   font-size: 2rem;
@@ -93,9 +94,8 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
   margin-left: 15px;
+  text-align: center;
 }
-
-
 
 main {
   display: flex;
@@ -120,14 +120,15 @@ font-size: 13px;
     display: flex;
     justify-content: center;
     height: 35px;
+    margin-left: 30px;
 }
 
 .input-text {
     border-radius: 4px;
     border: 1px solid #CECECE;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    width: 190px;
-    padding-left: 20px;
+    width: 200px;
+    padding-left: 15px;
 }
 
 ::placeholder {
@@ -143,12 +144,15 @@ img {
 h3 {
     text-align: center;
     margin-top: 10px;
+    margin-left: -5px;
     font-size: 12px;
     font-weight: bold;
 }
 
 .btn-group {
-    margin: 0 35px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-group button {
@@ -177,3 +181,105 @@ h3 {
   background-color: #0A6CBF;
   color: white;
 }
+
+/* .free-trail {
+    text-align: center;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+
+.free-basics {
+    margin-top: -55px;
+} 
+
+ table {
+        width: 1285px;
+        border-collapse: collapse;
+        margin: 30px auto 0 auto;
+        border: 1px solid #DFE0E6;
+        
+}
+
+tbody {
+    width: 258px;
+}
+td {
+    font-size: 14px;
+}
+
+ th, td {
+        padding: 10px;
+        text-align: left;
+        border-left: 1px solid #DFE0E6;
+ }
+
+ td .features{
+      height: 30px !important;
+ }
+ .features {
+     text-align: center;
+     border: 1px solid #DFE0E6;
+     color: #172B4D;
+     background-color: #E4EDF2;
+     font-size: 15px;
+     font-weight: 500;
+ }
+
+ .devices {
+     text-align: center;
+     font-weight: 600;
+     font-size: 14px;
+ }
+
+ th > h2 {
+     text-align: center;
+ }
+
+ .btn-hd {
+     padding: 5px;
+     border: 1px solid #0A6CBF;
+     color: #0A6CBF;
+     border-radius: 4px;
+     
+ }
+ /* .btn-th {
+     margin-left: 45px;
+     margin-top: 4px;
+     padding: 5px;
+     width: 120px;
+     border-radius: 1px solid #0A6CBF;
+     color: #0A6CBF;
+ } */
+/* td > button {
+     margin-left: 10px;
+ } */
+
+ .free-trail {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .free-Para {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 16px;
+}
+
+.para2 {
+    white-space: pre;
+}
+
+.Basics {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.basics-note {
+    margin-top: 50px;
+}
+
