@@ -153,6 +153,7 @@ h3 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    border-radius: 4px;
 }
 
 .btn-group button {
@@ -162,7 +163,9 @@ h3 {
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  width: 150px;
+  width: 190px;
+  height: 57px;
+  font-size: 16px;
 }
 
 /* Clear floats (clearfix hack) */
@@ -174,6 +177,11 @@ h3 {
 
 .btn-group button:not(:last-child) {
   border-right: none; /* Prevent double borders */
+}
+
+.btn-month {
+background-color: #0A6CBF !important;
+color: white !important;
 }
 
 /* Add a background color on hover */
@@ -196,12 +204,24 @@ h3 {
 } 
 
  table {
-        width: 1285px;
+        width: 1360px;
         border-collapse: collapse;
-        margin: 30px auto 0 auto;
+        margin: 50px auto 0 auto;
         border: 1px solid #DFE0E6;
         
 }
+
+.table {
+    overflow-x:auto;
+    width: 100%;
+}
+.standard {
+    position: relative;
+}
+
+/* .table {
+    border: 1px solid black;
+} */
 
 tbody {
     width: 258px;
@@ -219,13 +239,16 @@ td {
  td .features{
       height: 30px !important;
  }
+
  .features {
-     text-align: center;
      border: 1px solid #DFE0E6;
-     color: #172B4D;
      background-color: #E4EDF2;
-     font-size: 15px;
-     font-weight: 500;
+     height: 47px !important;
+ }
+ .center-features {
+    margin-right: 40px;
+    font-size: 24px !important;
+    font-weight: bold;
  }
 
  .devices {
@@ -234,6 +257,13 @@ td {
      font-size: 14px;
  }
 
+ .check {
+     color: #0152CB;
+ }
+
+.billed {
+    color: #0152CB;
+}
  th > h2 {
      text-align: center;
  }
@@ -243,19 +273,17 @@ td {
      border: 1px solid #0A6CBF;
      color: #0A6CBF;
      border-radius: 4px;
-     
- }
- /* .btn-th {
-     margin-left: 45px;
-     margin-top: 4px;
-     padding: 5px;
+     background-color: #FFFFFF;
      width: 120px;
-     border-radius: 1px solid #0A6CBF;
-     color: #0A6CBF;
- } */
-/* td > button {
-     margin-left: 10px;
- } */
+     height: 35px;
+     margin-left: 50px;
+     cursor: pointer;
+ }
+
+ .btn-hd:hover {
+  background-color: #0A6CBF;
+  color: white;
+ }
 
  .free-trail {
      display: flex;
@@ -283,3 +311,74 @@ td {
     margin-top: 50px;
 }
 
+.btn-bs {
+    padding: 5px;
+    border: 1px solid #0A6CBF;
+    color: #0A6CBF;
+    border-radius: 4px;
+    margin: 0 50px;
+    background-color: #FFFFFF;
+    width: 120px;
+    height: 35px;
+    cursor:pointer;
+}
+
+.btn-bs:hover {
+  background-color: #0A6CBF;
+  color: white;
+ }
+.enterprise {
+    margin-top: 8px;
+}
+.basics-expense {
+    margin-top: 34px;
+}
+
+
+.btn-ft {
+    background-color: #FFFFFF;
+     padding: 5px;
+     border: 1px solid #0A6CBF;
+     color: #0A6CBF;
+     border-radius: 4px;
+     margin: 40px 600px ;
+     width: 160px;
+    height: 35px;
+     cursor: pointer;
+ }
+
+.btn-ft:hover {
+  background-color: #0A6CBF;
+  color: white;
+ }
+
+ .buttom {
+     margin-bottom: 20px;
+ }
+
+ .recommend {
+    position: absolute;
+    top: 290px;
+    left: 51%;
+    max-width: 110px;
+    height: 24px;
+ }
+
+ .btn-recom {
+     background-color: #EA9C24;
+     padding: 5px;
+     border: 1px solid #EA9C24;
+     color: #FFFFFF;
+     border-radius: 4px;
+     /* margin: 40px 600px ; */
+     width: 120px;
+     height: 28px;
+     cursor: pointer;
+ }
+ .is-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+
+ 

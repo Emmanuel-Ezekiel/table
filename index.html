@@ -14,7 +14,7 @@
     <main>
         <section class="container">
             <h2>Plans and Pricing</h2>
-            <p>How many devices will you like to purchase licenses for?  </p>
+            <p>How many devices check will you like to purchase licenses for?  </p>
 
             <div>
                 <div class="input">
@@ -26,12 +26,12 @@
 
                 <div>
                     <div class="btn-group">
-                        <button>Monthly</button>
-                        <button>Annually</button>
+                        <button class="btn-month" onclick="onClick()">Monthly</button>
+                        <button onclick="change()">Annually</button>
                     </div>
 
-
-                    <table class="table">
+                    <div class="table">
+                         <table >
                         <thead>
                             <tr>
                                 <th></th>
@@ -47,83 +47,57 @@
                                 <th>
                                     <div class="Basics">
                                         <h2>Basics</h2>
-                                        <h1> $0 </h1>
+                                        <h1 id="1"> $4.5 </h1>
 
                                         <div class="basics-note">
-                                            <button class="btn-hd">Subscribe Now </button>
-                                            <p class="free-Para para2 "> For Families and small groups to <br> manage devices </p>
+                                            <button class="btn-bs">Subscribe Now </button>
+                                            <p class="free-Para para2 "> For Families and small groups to <br> manage devices check </p>
+                                        </div>
+                                       
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="Basics Standard">
+                                        <h2>Standard</h2>
+                                        <h1 id="2" > $4.2 </h1>
+
+                                        <div class="basics-note">
+                                            <button class="btn-bs">Subscribe Now </button>
+                                            <p class="free-Para para2 "> For growing businesses and small <br> businessorganisation</p>
                                         </div>
                                        
                                     </div>
                                 </th>
                                 <th>
                                     <div class="Basics">
-                                        <h2>Basics</h2>
-                                        <h1> $0 </h1>
+                                        <h2>Business</h2>
+                                        <h1 id="3"> $3.9 </h1>
 
                                         <div class="basics-note">
-                                            <button class="btn-hd">Subscribe Now </button>
-                                            <p class="free-Para para2 "> For Families and small groups to <br> manage devices </p>
+                                            <button class="btn-bs">Subscribe Now </button>
+                                            <p class="free-Para para2 "> For organisation to scale with <br> advanced content controls </p>
                                         </div>
                                        
                                     </div>
                                 </th>
                                 <th>
                                     <div class="Basics">
-                                        <h2>Basics</h2>
-                                        <h1> $0 </h1>
+                                        <h2 class="enterprise">Enterprise</h2>
+                                        <p class="free-Para para2 " ><span class="billed">Billed annually</span>, Need more <br> device licenses and powerful <br> admin features </p>
 
-                                        <div class="basics-note">
-                                            <button class="btn-hd">Subscribe Now </button>
-                                            <p class="free-Para para2 "> For Families and small groups to <br> manage devices </p>
+                                        <div class="basics-expense">
+                                            <button class="btn-bs"> Contact Us </button>
+                                            <p class="free-Para para2 "> For enterprises with global scale, <br>security and company needs </p>
                                         </div>
                                        
                                     </div>
                                 </th>
-                                <th>
-                                    <div class="Basics">
-                                        <h2>Basics</h2>
-                                        <h1> $0 </h1>
-
-                                        <div class="basics-note">
-                                            <button class="btn-hd">Subscribe Now </button>
-                                            <p class="free-Para para2 "> For Families and small groups to <br> manage devices </p>
-                                        </div>
-                                       
-                                    </div>
-                                </th>
-                                <!-- <th>
-                                    <h2 class="free-basics"> Basics</h2> 
-                                    <h1> $0 </h1>
-                                    <button class="btn-tr">Start Free trail</button>
-                                    <p class="free-Para">A good way to see our wonderful <br>features and how they work </p>
-                                </th>
-                                <th>
-                                    <h2 class="free-basics">Standard</h2> 
-                                    <h1> $0 </h1>
-                                    <button class="btn-tr">Start Free trail</button>
-                                    <p class="free-Para">A good way to see our wonderful <br>features and how they work </p>
-                                </th>
-                                <th>
-                                    <h2 class="free-basics"> Business</h2> 
-                                    <h1> $0 </h1>
-                                    <div class="btn-th">
-                                        <button >Start Free trail</button>
-                                        <p class="free-Para">A good way to see our wonderful <br>features and how they work </p>
-                                    </div>
-                                   
-                                </th>
-                                <th class="free-trail">
-                                    <h2 class="free-basics">Enterprise</h2> 
-                                    <p class="Enterprise"> <span>Billed annually</span>,Need more device licenses and powerful <br> admin features </p>
-                                    <button class="btn-tr">Start Free trail</button>
-                                    <p class="free-Para">A good way to see our wonderful <br>features and how they work </p>
-                                </th> -->
+                               
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td colspan="10" class="features">Features</td>
+                                <td colspan="10" class="features "><h2 class="center-features">Features</h2></td>
                             </tr>
                             <tr>
                                 <td>Count of Devices</td>
@@ -134,122 +108,129 @@
                                 <td class="devices">150001 Devices and above</td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
+                                <td>QR code - based Enrolment</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
-                                <td class="devices"><i class="fas fa-check"></i></td>
+                                <td>Zero Touch Enrolment</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Identify and Access Management</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Over- the- air device update and configurations</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Holistic user &role management</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Remote device controls</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Real-time monitoring of devices check location and activities</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Monitor data usage by apps</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Kiosk Lockdown</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Lockdown devices check to an organization's private network</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Download apps from google playstore</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Support "NO Login" for users organization as required</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
-                                <td>Free-Trial3</td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                                <td>Windows Kiosk Lockdown</td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
+                                <td class="devices check"><i class="fas fa-check"></i></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><button>Start Free Trail</button></td>
-                                <td><button>Subscribe Now</button></td>
-                                <td><button>Subscribe Now</button></td>
-                                <td><button>Subscribe Now</button></td>
-                                <td><button>Contact Us</button></td>
+                                <td><button class="btn-hd buttom">Start Free Trail</button></td>
+                                <td><button class="btn-hd buttom">Subscribe Now</button></td>
+                                <td><button class="btn-hd buttom">Subscribe Now</button></td>
+                                <td><button class="btn-hd buttom">Subscribe Now</button></td>
+                                <td><button class="btn-hd buttom">Contact Us</button></td>
                             </tr>
                         </tbody>
                     </table>
+                    </div>
+
+                   
+
+                    <div class="recommend">
+                        <button class="btn-recom">Recommended</button>
+                    </div>
 
                     <div class="button-features">
-                        <button> Learn about features </button>
+                        <button class="btn-ft"> Learn about features </button>
                     </div>
                 </div>
 
@@ -257,6 +238,8 @@
            
         </section>
     </main>
+
+    <script src="./index.js"></script>
 
 </body>
 </html>
