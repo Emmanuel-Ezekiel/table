@@ -19,3 +19,16 @@ function onClick() {
 	document.getElementById("3").innerHTML = business;
 }
 
+
+const btns = Array.from(document.querySelectorAll('.btn-month'));
+
+const toggleClass = (e) => {
+  for (var el of btns) {
+    el.classList.remove('--selected')
+  }
+  e.currentTarget.classList.add('--selected')
+}
+
+for (var el of btns) {
+  el.addEventListener('click', toggleClass)
+}
