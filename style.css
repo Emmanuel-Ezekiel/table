@@ -101,12 +101,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: solid 2px black; */
 }
 
 .container {
 margin-top: 50px;
-/* border: solid 2px black; */
 font-size: 13px;
 }
 
@@ -168,7 +166,6 @@ h3 {
   font-size: 16px;
 }
 
-/* Clear floats (clearfix hack) */
 .btn-group:after {
   content: "";
   clear: both;
@@ -179,30 +176,10 @@ h3 {
   border-right: none; 
 }
 
-/* .btn-month {
-background-color: #0A6CBF !important;
-color: white !important;
-} */
-
-/* Add a background color on hover */
-/* .btn-group button:hover {
-  background-color: #0A6CBF;
-  color: white;
-} */
-
 .--selected {
   background-color: #0A6CBF;
   color: white;
 }
-
-/* .free-trail {
-    text-align: center;
-    margin-top: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
 
 .free-basics {
     margin-top: -55px;
@@ -223,9 +200,6 @@ color: white !important;
     position: relative;
 }
 
-/* .table {
-    border: 1px solid black;
-} */
 
 tbody {
     width: 258px;
@@ -374,11 +348,11 @@ td {
      border: 1px solid #EA9C24;
      color: #FFFFFF;
      border-radius: 4px;
-     /* margin: 40px 600px ; */
      width: 120px;
      height: 28px;
      cursor: pointer;
  }
+
  .is-hidden {
   display: none;
   visibility: hidden;
