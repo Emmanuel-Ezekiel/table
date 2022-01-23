@@ -185,16 +185,14 @@ h3 {
     margin-top: -55px;
 } 
 
- table {
-    width: 1360px;
-    border-collapse: collapse;
-    margin: 50px auto 0 auto;
-    border: 1px solid #DFE0E6;       
-}
-
+ 
 .table {
+  /* width: 1360px; */
     overflow-x:auto;
     width: 100%;
+    border-collapse: collapse;
+    margin: 50px auto 0 auto;
+     border: 1px solid #DFE0E6; 
 }
 .standard {
     position: relative;
@@ -208,10 +206,11 @@ td {
     font-size: 14px;
 }
 
- th, td {
+ .table th, .table td {
         padding: 10px;
         text-align: left;
         border-left: 1px solid #DFE0E6;
+       
  }
 
  td .features{
@@ -359,4 +358,32 @@ td {
 }
 
 
- 
+ @media screen and (max-width: 800px){
+   .table  thead, .table tr, .table th, .table td{
+     display: block;
+     width: 100%;
+   }
+
+   .table {
+     border: none;
+   }
+
+   .basics > .btn-bs {
+     display: block;
+   }
+
+   .features {
+     border: none !important;
+     background-color: none !important;
+ }
+
+   .center-features {
+    margin-right: 40px;
+    font-size: 24px !important;
+    font-weight: bold;
+ }
+   /* .table, .table tbody, .table tr, .table td {
+     display: block;
+     width: 100%;
+   } */
+ }
