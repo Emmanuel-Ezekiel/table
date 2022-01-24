@@ -389,8 +389,8 @@ td {
     width: 40% !important;
     display: block;
     margin-left: 130px;
-    border-left: none;
-    background-color: #fff;
+    border: none !important;
+    background-color: transparent !important;
  }
 
  .free-trail h2 {
@@ -420,22 +420,25 @@ td {
    box-shadow: #00000014 1px 4px 20px;
  }
 
-tbody {
-  width: 380px;
-  margin-left: 5px;
+
+.t-head {
+  width: 365px !important;
+  border: 1px solid #DFE0E6;
+  margin-left: 11px;
+  margin-bottom: 20px;
 }
 
 .table .head {
   text-align: left;
-  margin-left: 100px;
-  border: none;
+  padding-left: 100px;
 }
+
 .table .title {
   text-align: left;
   position: relative;
   border: 1px solid #DFE0E6;
   background-color: #F1F3F5;
-  margin-top: 20px;
+  font-size: 16px;
 
 }
 
@@ -479,8 +482,8 @@ main {
 }
 .recommend {
   position: absolute;
-  top: 119%;
-  left: 36%;
+  top: 145%;
+  left: 24%;
   max-width: 110px;
   height: 24px;
 }
@@ -492,4 +495,15 @@ main {
 
   
     
+ }
+
+ @media screen and (max-width: 500px) {
+  .recommend {
+  position: absolute;
+  top: 114.5%;
+  left: 34%;
+  max-width: 110px;
+  height: 24px;
+}
+
  }
